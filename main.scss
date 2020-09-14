@@ -1,3 +1,4 @@
+@use 'slide_show.scss';
 $nav_font_size: max(18px, calc(16px + 0.30vw));
 $main_panel_margin : max(25px, 4vh);
 $profile_font_color: black;
@@ -19,7 +20,7 @@ $slide_in_duration: 1s;
 }
 @media (min-width:768.01px){
     #quolifications_grid{
-        grid-template-columns: 50fr 50fr;
+        grid-template-columns: 54.5fr 45.5fr;
     }
 }
 
@@ -133,8 +134,25 @@ img{
     align-items: center;
     
 }
-
-
+.align_perfectly_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#my-slide-show{
+    
+    height: 95%;
+}
+//hsl(203, 92%, 51%);
+//hsl(203, 85%, 79%);
+#feedback_div{
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    background-image: linear-gradient(to bottom right,hsl(203, 92%, 88.5%), hsl(203, 85%, 93%));
+}
 @keyframes fade-in{
     100%{
         opacity:1;
