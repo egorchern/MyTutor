@@ -20,7 +20,10 @@ function scrl(){
         if (top >= range_min && top <= range_max - window.outerHeight * 0.4){
             
             $(scroll_tracked[i]).removeClass("scroll_tracked");
-            $(scroll_tracked[i]).css("animation-play-state", "running");
+            setTimeout(function(){
+                $(scroll_tracked[i]).css("animation-play-state", "running");
+            }, 60);
+            //$(scroll_tracked[i]).css("animation-play-state", "running");
         }
         
     }
