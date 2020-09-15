@@ -26,7 +26,7 @@ function scrl(){
     }
 }
 let slide_show_index = 0;
-let image_sources = ["Assets/feedback_1.PNG"];
+let image_sources = ["Assets/feedback_1.PNG", "Assets/feedback_2.PNG", "Assets/feedback_3.PNG"];
 function load_slideshow(id){
     $(`#${id} > .slide-show-image-container > img`).attr("src", image_sources[slide_show_index]);
     for (let i = 0; i < image_sources.length;i++){
