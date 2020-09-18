@@ -11,6 +11,12 @@ $slide_in_duration: 1s;
     animation-play-state: paused;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+%coolBorders{
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: .45rem;
+    background-color: white;
+}
 @font-face{
     font-family: bento_sans; src:url("Assets/bentosans.woff2");
 }
@@ -65,7 +71,9 @@ html,body{
     width:100%;
     height:100%;
 }
-
+.cards{
+    @extend %coolBorders;
+}
 #quolifications_grid{
     display:grid;
     
@@ -131,6 +139,12 @@ main{
     justify-content: center;
     
     
+}
+#subjects_container{
+    padding: 16px;
+    >div{
+        margin-top: $main_panel_margin;
+    }
 }
 .slide_in{
     @extend %slide_in;

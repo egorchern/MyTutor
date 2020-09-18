@@ -84,6 +84,13 @@
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.cards {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.45rem;
+  background-color: white;
+}
+
 @font-face {
   font-family: bento_sans;
   src: url("Assets/bentosans.woff2");
@@ -199,6 +206,13 @@ main > div {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+#subjects_container {
+  padding: 16px;
+}
+#subjects_container > div {
+  margin-top: max(25px, 4vh);
 }
 
 p {
