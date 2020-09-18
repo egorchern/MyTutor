@@ -17,7 +17,7 @@ function scrl(){
     for(let i = 0; i < scroll_tracked.length; i++){
         let top = scroll_tracked[i].offsetTop;
         console.log(range_min, range_max, top)
-        if (top >= range_min && top <= range_max - window.outerHeight * 0.4){
+        if (top >= range_min && top <= range_max - window.outerHeight * 0.35){
             
             $(scroll_tracked[i]).removeClass("scroll_tracked");
             setTimeout(function(){

@@ -1,6 +1,7 @@
 @use 'slide_show.scss';
 $nav_font_size: max(18px, calc(16px + 0.30vw));
 $main_panel_margin : max(25px, 4vh);
+$main_text_font_size: max(16px, 14px + 0.25vw);
 $profile_font_color: black;
 $slide_in_duration: 1s;
 %slide_in{
@@ -79,7 +80,7 @@ html,body{
     height: 100%;
     overflow-x:hidden;
     overflow-y:auto;
-    
+    background-image:linear-gradient(0deg, rgba(247,243,251,0.8) 0%, #F7F3FB 100%);
 }
 ul{
     margin-bottom: 0 !important;
@@ -118,7 +119,7 @@ main{
     }
 }
 #profile_div{
-    background-image : linear-gradient(0deg, rgba(247,243,251,0.8) 0%, #F7F3FB 100%);
+    /*background-image : linear-gradient(0deg, rgba(247,243,251,0.8) 0%, #F7F3FB 100%);*/
     color: $profile_font_color;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -176,15 +177,22 @@ img{
     
     max-height: inherit;
 }
-//hsl(203, 92%, 51%);
-//hsl(203, 85%, 79%);
+
 #feedback_div{
-    width:100%;
+    
     padding-top: 20px;
     padding-bottom: 20px;
     
-    background-image: linear-gradient(to bottom right,hsl(203, 92%, 88.5%), hsl(203, 85%, 93%));
+    /*background-image: linear-gradient(180deg,hsla(203, 92%, 90%, 0.9), hsla(203, 85%, 92%, 0.75));*/
     
+}
+#about_text_div{
+    /*background-image: linear-gradient(180deg, hsla(270, 100%, 93%, 0.9), hsla(270, 100%, 95%, 0.75));*/
+    padding: 16px;
+    font-size: $main_text_font_size;
+    *{
+        font-size:inherit;
+    }
 }
 @keyframes fade-in{
     100%{

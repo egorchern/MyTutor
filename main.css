@@ -153,6 +153,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  background-image: linear-gradient(0deg, rgba(247, 243, 251, 0.8) 0%, #F7F3FB 100%);
 }
 
 ul {
@@ -189,7 +190,7 @@ main > div {
 }
 
 #profile_div {
-  background-image: linear-gradient(0deg, rgba(247, 243, 251, 0.8) 0%, #F7F3FB 100%);
+  /*background-image : linear-gradient(0deg, rgba(247,243,251,0.8) 0%, #F7F3FB 100%);*/
   color: black;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -242,10 +243,18 @@ img {
 }
 
 #feedback_div {
-  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: linear-gradient(to bottom right, #c7e8fd, #def1fc);
+  /*background-image: linear-gradient(180deg,hsla(203, 92%, 90%, 0.9), hsla(203, 85%, 92%, 0.75));*/
+}
+
+#about_text_div {
+  /*background-image: linear-gradient(180deg, hsla(270, 100%, 93%, 0.9), hsla(270, 100%, 95%, 0.75));*/
+  padding: 16px;
+  font-size: max(16px, 14px + 0.25vw);
+}
+#about_text_div * {
+  font-size: inherit;
 }
 
 @keyframes fade-in {
