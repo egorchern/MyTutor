@@ -1,47 +1,202 @@
 <!DOCTYPE html>
+
 <head>
-    
+
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
- 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
     <link rel=stylesheet href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="Assets/logo.PNG">
     <title>Subjects I teach</title>
- 
+
     <script type="text/javascript" src="main.js"></script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="wrapper">
         <nav id="main_nav">
-           <div style="max-width: 60px;margin-bottom: 6px;margin-right:10px;">
-              <img src="Assets/logo.PNG">
-  
-           </div>
-           <ul>
-              
-              <li>About myself</li>
-              <li>Subjects I teach</li>
-              <li>Get in contact</li>
-           </ul>
-  
+            <div style="max-width: 60px;margin-bottom: 6px;margin-right:10px;">
+                <img src="Assets/logo.PNG">
+
+            </div>
+            <ul>
+
+                <li onclick="window.open('/index.html', '_self')">About myself</li>
+                <li onclick="window.open('/subjects.html', '_self')">Subjects I teach</li>
+                <li onclick="window.open('/contacts.html', '_self')">Get in contact</li>
+            </ul>
+
         </nav>
         <main>
             <div class="align_perfectly_container">
-                <div id="subjects_container" class="col-xl-9 col-lg-10 col-md-10 col-sm-11 col-12 scroll_tracked slide_in" style="transform:translateX(-100vw)">
+                <div id="subjects_container" class="col-xl-9 col-lg-10 col-md-11 col-sm-12 col-12">
                     <h2 style="width:100%;text-align: center;">Subjects I teach:</h2>
-                    <div id="gcse_container">
-                        <h3 style="width:100%;text-align: center;">GCSEs</h3>
-                        <div class="cards" style="width:100px;height:200px">
+                    <h3 style="width:100%;text-align: center;" class="new_subject_header">GCSEs</h3>
+                    <div class="cards_container scroll_tracked slide_in" style="transform:translateX(-100vw)">
 
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/gcse_maths.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">GCSE Mathematics (Further
+                                    Mathetmatics as well)</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    Graphs are essential tools in accounting, investments and day trading. Inequalities
+                                    and functions are the axioms of programming. Needless to say, maths knowledge is
+                                    essential in the modern high skill labour force.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 6£/h</p>
+
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/gcse_computer_science.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">GCSE Computer Science</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    GCSE computer science teaches basics of programming and hardware that can be further
+                                    developed in A-Levels or turned into a job as an apprentice at tech company.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 6£/h</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="width:100%;text-align: center;" class="new_subject_header">A-Levels</h3>
+                    <div class="cards_container scroll_tracked slide_in" style="transform:translateX(100vw)">
+
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/a_level_maths.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">A-Level Mathematics (Further
+                                    Mathetmatics as well)</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    A-Level maths teaches specific skills that are necessary for highly specialized jobs
+                                    such as accountancy, engineering, etc. Though topics such as statistics are useful
+                                    to everybody.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7£/h</p>
+
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/a_level_computer_science.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">A-Level Computer Science</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    A-Level CS delves much deeper into the hardware such as CPU and how it interacts
+                                    with all other internal hardware. There is also a much significant focus on
+                                    programming (50% of final grade).
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7£/h</p>
+
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/a_level_accounting.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">A-Level Accounting</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    Knowledge in accounting is useful in fields such as entrepreneurship, investments,
+                                    forensics and many more. Knowing the fundamentals of financial bookkeeping will be
+                                    useful even if you carreer plans lie outside of accounting.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7£/h</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="width:100%;text-align: center;" class="new_subject_header">Programming</h3>
+                    <div class="cards_container scroll_tracked slide_in" style="transform:translateX(-100vw)">
+
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/python.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">Python</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    Python is an incredibly powerful high-level language with an enormous number of libraries that arguably make it the most flexible language in terms of what it can be used for. Python has the most demand in software development at the moment.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7£/h</p>
+
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/csharp.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">C#</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    C# is very centred around object-oriented programming and has a lot of GUI development frameworks. C# is one of the best languages for Windows application development along with other C languages. It is the language that is used by game engine Unity that many mid-size games are made in.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7£/h</p>
+
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div>
+                                <img src="Assets/web_development.jpg" style="border-radius: 4px;">
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <h4 style="width:100%;text-align: center;margin-top:5px;">HTML + CSS + JS + jQuery</h4>
+                                <p style="width:100%;margin-top:5px;">
+                                    The internet is considered the wonder of the 21st century. Knowing the language of the internet is therefore essential for programmers. Javascript is the programming language of the internet, together with jQuery everything can be implemented in a webpage.
+                                </p>
+                            </div>
+                            <div
+                                style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center; margin-top: auto;">
+                                <p style="font-weight: bolder;">In person: Negotiable</p>
+                                <p style="font-weight: bolder;">Remote: 7.5£/h</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </main>
     </div>
- </body>
+</body>

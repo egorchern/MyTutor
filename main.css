@@ -1,5 +1,4 @@
 .slide-show-container {
-  min-width: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -147,6 +146,25 @@ html, body {
   height: 100%;
 }
 
+.cards_container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  flex: auto;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 12px;
+  margin: 15px;
+  max-width: 335px;
+}
+.cards p {
+  font-size: max(16px, 14px + 0.25vw);
+}
+
 #quolifications_grid {
   display: grid;
   column-gap: 15px;
@@ -209,9 +227,10 @@ main > div {
 }
 
 #subjects_container {
-  padding: 16px;
+  padding: 1px;
 }
-#subjects_container > div {
+
+.new_subject_header {
   margin-top: max(25px, 4vh);
 }
 
