@@ -1,3 +1,4 @@
+
 $(function(){
     scrl();
     
@@ -63,4 +64,48 @@ function load_slideshow(id){
         $(`#${id} > .slide-show-dots-container > .slide-show-dot:nth-child(${slide_show_index + 1})`).addClass("slide-show-dot-active");
     })
 
+}
+
+function handle_submit_form(){
+    let name = $('#name').val();
+    let email = $('#email').val()
+    let interested_in = $('#interested_in').val();
+    let comments = $('#comments').val();
+    let error_text = "";
+    if (name === ""){
+        error_text += "\nPlease fill in the Name field";
+    }
+    if (email === ""){
+        error_text += "\nPlease fill in the Email field";
+    }
+    if (interested_in === ""){
+        error_text += "\nPlease selected the subject you are interested in";
+    }
+    if (error_text != ""){
+        alert(error_text);
+    }
+    else{
+        
+        send_email(name, email, interested_in, comments);
+    }
+    
+}
+function send_email(name, email, interested_in, comments){
+    
+    
+    Email.send({
+        Host: "smtp.gmail.com", 
+        Username: "egor.chernyshev.tutoring@gmail.com", 
+        Password: "Crab1Rook2", 
+        To: 'egor.chernyshev.tutoring@gmail.com', 
+        From: "egor.chernyshev.tutoring@gmail.com", 
+        Subject: "Tutoring interst", 
+        Body: `
+        ${name}  |
+        \n${email}  |
+        \n${interested_in}  |
+        \n${comments}  |
+        `
+    });
+    
 }

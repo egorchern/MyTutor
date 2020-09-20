@@ -83,7 +83,7 @@
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.cards {
+.cards, #contact_form {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.45rem;
@@ -134,9 +134,30 @@
     text-align: center;
   }
 }
+#wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: linear-gradient(0deg, rgba(247, 243, 251, 0.8) 0%, #F7F3FB 100%);
+  background-repeat: repeat;
+}
+
 * {
   font-family: "bento_sans";
   word-break: keep-all;
+}
+
+label {
+  font-weight: bolder;
+}
+
+#contact_form {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  max-width: 700px;
 }
 
 html, body {
@@ -171,14 +192,6 @@ html, body {
   width: 95%;
   max-width: 1450px;
   margin: auto;
-}
-
-#wrapper {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-image: linear-gradient(0deg, rgba(247, 243, 251, 0.8) 0%, #F7F3FB 100%);
 }
 
 ul {
